@@ -1,0 +1,82 @@
+:root {
+    --czarny-background: #0b090F;
+    --primary-light: #303138;
+    --secondary: #d3ccc2;
+    --primary-text: #f0e9e9;
+    --text-light: #f9f9f9;
+}
+
+main .container {
+    width: 90vw;
+    margin: 0 auto;
+    border: 2px solid royalblue;
+    position: fixed;
+    background-color: aqua;
+    height: 70px;
+}
+
+section {
+    width: 110vh;
+}
+
+main .container .nawigacja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .nawigacja .naw-link {
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-right: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+main .container .nawigacja .naw-link:hover {
+    color: var(--secondary);
+    background-color: blueviolet;
+    border: 2px solid palevioletred;
+    border-bottom: 2px solid var(--secondary);
+    ;
+}
+
+main .sekcja {
+    width: 90vw;
+    height: 60vh;
+    margin-top: 70px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .sekcja .user {
+    width: 80%;
+    border: 2px solid red;
+}
+
+main .sekcja .user .user--foto {
+    margin-top: 70px;
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    border-radius: 20px 0px 20px 5px;
+}
+
+main .sekcja .user .user--foto img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 20px 5px;
+}
+
+main .sekcja .user .user--foto .user--foto--info {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
